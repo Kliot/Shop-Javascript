@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" lang="en" content="store">
+  <title>Cart</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./css/screen.css" >
+  
+</head>
+<body>
+<!--wrapper-->
+  <div class="wrapper">
+    <!--header-->
+    <header class="container">
+      <div class="header-top flex">
+        <div class="logo">
+          <a href="./index.html" class="logo__link">Template</a>
+          <a href="./index.html" class="logo__link logo__link_mob">TL</a>
+        </div>
+        <div class="user-info flex">
+          <div class="user-info__log">
+            <a href="#" class="user-info__login">E-mail sing up</a>
+          </div>
+          <div class="user-info__basket">
+            <a href="./cart.html" class="user-info__basket-link">Bag <span id="sumProduct">(0)</span> <span id="sumPrice"></span></a>
+          </div>
+        </div>
+        <div class="burger">
+          <div class="burger__btn" id="burger"></div>
+        </div>
+      </div>
+      <div class="header-bottom" id="menu">
+        <ul class="menu flex">
+          <li class="menu__item"><a href="#" class="menu__link">Women</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Handbags</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Sale</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">New Arrivals</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Clearance</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Store Locator</a></li>
+          <li class="menu__item">
+            <div class="search">
+              <form action="#" method="get" class="search__form" id="search__form">
+                  <div class="search__container" id="search__container">
+                    <input name="search" placeholder="Style Name" type="search" class="search__input" id="search__input">
+                  </div>
+                  <a href="#" class="search__button search__button-tablet" id="search"></a>
+                  <a href="#" class="search__button"></a>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--end header-->
+    <!--end header-->
+    <!--content-->
+    <div class="content cart-page">
+      <!--slider-->
+      <hr>
+      <!--cart-->
+      <div class="container">
+        <h1>Shopping bag</h1>
+      </div>
+      
+      <hr>
+    <div class="container">
+       <div id="cart_content" class="cart__content">
+         Your shopping bag is empty!
+       </div>
+    </div>
+     
+      <!--end cart-->
+      <!--cart text-->
+      <div class="cart-text">
+        <hr>
+        <p>You've qualified for Free UK Next Day Delivery on your order. Don't forget to enter the code <strong>nexday</strong> at checkout</p>
+      </div>
+
+      <!--end cart text-->
+        <!--total block-->
+        <div class="container">
+          <div class="total flex">
+            <div class="empty">
+              <button id="btn_del" class="btn-del">Empty bag</button>
+            </div>
+            <div class="catalog__button-inner">
+              <button id="btn_buy" class="catalog__button catalog__button-del">Buy now</button>
+            </div>
+            <div class="total__info">
+              <p>Total Cost</p>
+              <div id="total" class="total__result"></div>
+            </div>
+          </div>
+        </div>
+        <!--total-->
+    </div>
+    <!--end content-->
+
+  </div>
+<!--end wrapper-->
+<!--footer-->
+<footer>
+  <hr/>
+  <div class="container">
+    <div class="footer-top flex">
+      <div class="footer-top__block">
+        <h3 class="footer-top__heading">Quick Links</h3>
+        <ul class="footer-top__menu">
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Store locator</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Gift cards</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Size guide</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">About us</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-top__block">
+        <h3 class="footer-top__heading">Customer Care</h3>
+        <ul class="footer-top__menu">
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Customer service</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Track my orders</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Return policy</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Shipping &amp; delivery</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Contact us</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-top__block footer-top__block_right flex">
+        <div class="footer-question">
+          <div>
+            <h3 class="footer-top__heading">Questions</h3>
+            <p class="footer-question__item">Tweet us <a href="#" class="footer-question__link">@template</a></p>
+            <div class="footer-question__text">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</div>
+            <div class="social">
+              <ul class="social__menu flex">
+                <li class="social__item"><a href="#" class="social__link social__link_facebook"></a></li>
+                <li class="social__item"><a href="#" class="social__link social__link_twitter"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-phone-order">
+          <h3 class="footer-top__heading">Order by phone</h3>
+           <a href="tel:88004094712" class="footer-phone-order__link">8-800-409-47-12</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr/>
+  <div class="container">
+    <div class="footer-bottom flex">
+      <div class="copyright">
+        <p>© 2010–2015, The Template Group inc.</p>
+      </div>
+      <div class="share-info">
+        <p>Share<span>1 437</span></p>
+      </div>
+      <div class="sharing">
+        <ul class="sharing__menu flex">
+          <li class="sharing__item"><a href="#" class="sharing__link">Legal notice</a></li>
+          <li class="sharing__item"><a href="#" class="sharing__link">Privacy policy</a></li>
+          <li class="sharing__item"><a href="#" class="sharing__link">Site map</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end footer-->
+<script src="./js/main.js"></script>
+<script>
+CartDataValue();
+  CartFunction();
+  
+</script>
+
+</body>
+</html>
